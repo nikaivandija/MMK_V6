@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multimedijske komunikacije</title>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans&display=swap" rel="stylesheet">
+<meta name="viewport"	
+	  content="width=device-width, initial-scale=1.0">
+<style>
+h1 {
+    font-weight:200;
+    font-style: oblique;
+    color: darkslategray;
+    background-color:#FED2D8;
+	}
+
+.paragraf {
+    font-weight: 400;
+    font-style: normal;
+    color:cadetblue;
+    background-color:#FED2D8;
+	}
+	
+body, span, form, table, td, th, h1, .paragraf {
+    font-family:"Parkinsans", sans-serif;
+	text-align: center;
+	}
+	
+body {
+	font-weight: 400;
+	font-style: normal;
+	color: dimgrey;
+	background-color: lightpink; 
+	}
+	
+span {
+	font-weight: bold;
+	color:deeppink;
+	font-style: italic;
+	}
+		
+input[type=submit], input[type=reset]{
+    font-size:15px;
+    font-weight:bold;
+    background:#79C8C7;
+	}
+
+input[type=button] {
+    font-size:15px;
+    font-weight:bold;
+    background:#41898B;
+    border-radius:5px;
+    box-shadow:1px 2px 3px gray;
+    padding:8px;
+	}
+
+ul li { 
+	color:cornflowerblue; 
+	list-style-position: inside;
+	}
+ol li {
+	color:darkslateblue; 
+	list-style-position: inside;
+	}
+
+form h4 { 
+    color:#117585;
+    font-weight:bold;
+	}
+
+fieldset legend b { 
+    color:#DD129B;
+	}
+
+form, fieldset {
+    width:600px;
+    background:#FED2D8;
+    border:3px solid #117585;
+    margin:10px auto;
+    display:block;
+	}
+
+.opcije {
+    display:inline-block;
+    background:deeppink;
+    color:white;
+    padding:10px;
+    margin:0 5px;
+    text-align:center;
+	}
+
+ul.meni { 
+	text-align:center;
+	} 
+
+
+h1 {
+    position:relative;
+    top:0;
+    text-align:center;
+    margin-bottom:20px;
+	}
+
+.glavni-tekst { 
+    width:55%;
+    float:left;
+    margin:10px;
+	}
+
+.obrasci {
+    width:35%;
+    float:right;
+    margin:20px;
+	}
+
+.clearfix {
+    clear:both;
+	}
+
+table {
+    border:4px double #CF0082;
+    border-collapse:collapse;
+    border-radius:30px;
+    margin-top:20px;
+	margin:auto;
+	}
+
+td,th {
+    border:3px solid #41898B;
+    padding:10px;
+    width:50px;
+    height:50px;
+	vertical-align: middle;
+	}
+
+tr:nth-child(odd) {
+	background:#FED2D8;
+	}
+	
+#r4 {
+	background:#BDE5E7;
+	}
+	
+.blok {
+    position:fixed;   
+    right:10px;       
+    bottom:10px;      
+    left:auto;        
+    background:#FED2D8;
+    padding:30px 30px;
+    border-radius:10px;
+    font-weight:bold;
+    color:#421B47;
+}
+
+img {
+	width:300px;
+	height:auto;
+	box-shadow:1px 2px 2px gray;
+	border-radius:15px;
+	padding:3px;
+	}
+	
+iframe {
+	top:auto;
+	left:50px;
+	width:400px;
+	height:300px;
+	border:1px solid #F5C8DE;
+	border-radius:15px;
+	}
+	
+object {
+	width:600px;
+	height:600px;
+	}
+	
+@media (max-width:800px){
+	body{
+		font-size:18px;
+		background-color: lightpink;
+		}
+	.glavni-tekst,.obrasci,form,fieldset,object,iframe,img {
+		width:90% !important;
+		float:none;
+		margin:auto;
+		display:block;
+	    }
+	}
+	
+@media (max-width:600px){
+	body{
+		font-size:14px;
+		background-color: lightcoral;
+		}
+	.glavni-tekst,.obrasci {
+		width:100% !important;
+		float:none;
+		margin:0 auto;
+		}
+	}
+	
+</style>
+</head>
+
+<body>
+	<h1>Multimedijske komunikacije</h1>
+	<br>
+	<p class="paragraf">Ovo je kolegij Multimedijske komunikacije.</p>
+	<br>
+	<p>Kolegij se održava na Grafičkom fakultetu.</p>
+	<br>
+<p>Na fakultetu postoje tri dvorane:</p>	
+<ul>
+	<li> dvorana A</li>
+	<li> dvorana B</li>
+	<li> dvorana C</li>
+	</ul>
+	<br>
+<p>Najbolje stvari na našem fakultetu su:</p>	
+<ol>
+	<li> aparat za kavu</li>
+	<li> aparat s hranom</li>
+	<li> praktikumi</li>
+	</ol>
+	<br>
+<p><em>Naš fakultet ima čak i <span>vlastitog mačka.</span></em></p>
+<p><strong>Sada je <sub>45</sub><sup>2</sup> godina.</strong></p>
+	
+<ul class="meni">
+	<li class="opcije">O fakultetu </li>
+	<li class="opcije">O mačku </li>
+	<li class="opcije">O kolegijima </li>
+	</ul>
+	
+<form action="Prijava">
+	<h4>Prijava</h4>
+	Ime:<input type="text" name="ime"><br>
+	Prezime:<input type="text" name="prezime"><br>
+	Lozinka:<input type="password" name="lozinka" maxlenght="8"><br>
+	<input type="submit" value="Pošalji">
+	<input type="reset" value="Poništi"><br>
+	</form>
+	 
+<form>
+	<h4>Spol</h4> 
+	<input type="radio" name="spol" value="Žensko">Žensko<br>
+	<input type="radio" name="spol" value="Muško">Muško<br>
+	<input type="submit" value="Pošalji">
+	<input type="reset" value="Poništi"><br>
+	</form>
+	
+<br>
+<form action="Gumb">
+	<input type="button" value="Gumbić" onclick="alert('Ovo je gumbić.')">
+	</form>
+	
+<form>
+	<h4>Zanimanje</h4> 
+	<label for="Studenti"> Studenti  </label>
+    <input type="radio" name="zanimanje" id="studenti" value="studenti"><br>
+	<label for="Profesori"> Profesori  </label>
+    <input type="radio" name="zanimanje" id="profesori" value="profesori"><br>
+	<label for="Ostali djelatnici"> Ostali djelatnici  </label>
+    <input type="radio" name="zanimanje" id="ostali djelatnici" value="ostali djelatnici"><br>
+	</form>
+	
+<form>
+	<h4>Odaberite najdraže voće</h4>
+	<select name="voće">
+	<option name="kruška">Kruška</option>
+	<option name="jabuka">Jabuka</option>
+	<option name="šljiva">Šljiva</option>
+	</select>
+	</form>
+	
+<form action="Povrće">
+	<h4>Odaberite najdraže povrće</h4>
+	<input list="povrće" name="povrće">
+	<datalist id="povrće">
+	<option value="MRKVA" name="mrkva"></option>
+	<option value="PERŠIN" name="peršin"></option>
+	<option value="KRUMPIR" name="krumpir"></option>
+	</datalist>
+	</form>
+	
+<br>
+<form action="Obavezno">
+	<fieldset>
+	<legend><b>Obavezna polja</b></legend>
+	Datum rođenja <input type="date" name="datum rođenja" size="30px"> <br>
+	OIB <input type="text" name="oib" size="30px"> <br>
+	JMBAG <input type="text" name="jmbag" size="30px"> <br>
+	<input type="submit" value="Pošalji">
+	<input type="reset" value="Poništi"><br>
+	</fieldset>
+	</form>
+	
+<form>
+	<h4>Vaša stranica </h4>
+	<input type="url" name="webpage" placeholder="webpage">
+	</form>
+<br>	
+<table>
+		<thead>
+			<tr>
+				<th colspan="6">BROJEVI</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="3">Parni</td>
+				<td rowspan="4">Neparni</td>
+				<td>1</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>4</td>
+				<td>6</td>
+				<td>5</td>
+				<td>7</td>	
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>10</td>
+				<td>12</td>
+				<td>9</td>
+				<td>11</td>
+			</tr>
+			<tr id="r4">
+				<td>14</td>
+				<td>16</td>
+				<td>18</td>
+				<td>13</td>
+				<td>15</td>
+			</tr>
+		</tbody>
+	</table>
+	
+<div class="blok">GRF</div>
+
+<br>
+<img src="mačka.jpg" alt="Mačka">
+	
+<br>
+<a href="https://www.zooplus.hr/magazin/wp-content/uploads/2019/09/fotolia_82719975-768x582-768x582.webp">
+	Bengalska mačka
+	</a>
+	
+<br>	
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y0sF5xhGreA?si=GWwXRboqVzTMRoae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<object data="miseviimačke.pdf" type="application/pdf"></object>
+   
+
+	
+</body>
+</html>
